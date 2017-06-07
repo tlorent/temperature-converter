@@ -1,0 +1,24 @@
+#container {
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  width: 350px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+#convert {
+  width: 120px;
+  padding: 10px;
+}

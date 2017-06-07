@@ -1,0 +1,11 @@
+// A user should be able to input numbers
+// Take the number the user inputs and convert it to Celsius or Fahrenheit
+// Display the result
+// If the Celsius or Fahrenheit degree is in a certain range, show a specific icon or image reflecting that range
+// A user should be able to reset the numbers
+// The user should only be allowed to input an integer
+
+33.8 degrees Fahrenheit = 1 degree Celsius
+1 degree celsius = 33.8 degrees Fahrenheit
+
+(degrees * 90)/(5+32)
