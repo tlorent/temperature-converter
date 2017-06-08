@@ -1,43 +1,53 @@
 $(document).ready(function() {
 
-  $("#myForm").submit(function(event) {
+  $("#celsiusForm").submit(function(event) {
     //prevent the form from refreshing automatically
     event.preventDefault();
 
     //get the value from the input
     //store it in a variable
     var celsius = $("#celsius").val();
-    var fahrenheit = $("#fahrenheit").val();
 
-    if(celsius > 0 || celsius < 0) {
-      //convert it to Fahrenheit
-      var convertToFahrenheit = celsius * (9/5) + 32;
+    //convert it to Fahrenheit
+    var convertedToFahrenheit = celsius * (9/5) + 32;
 
-      //display the conversion
-      $("#fahrenheit").val(convertToFahrenheit);
+    //display the conversion
+    $("#fahrenheit").val(convertedToFahrenheit);
 
-    } else if (fahrenheit > 0 || fahrenheit < 0) {
-      //convert it to Celsius
-      var convertToCelsius = (fahrenheit - 32) * (5/9);
-
-      //display the conversion
-      $("#celsius").val(convertToCelsius)
-    }
-
-  })
-
-  //reset the form when the user clicks reset
-  $("#reset").click(function() {
-
-    $("#myForm")[0].reset();
-    $("#myForm")[1].reset();
+    //display a background image for the temperature
+    // if(celsius < 0) {
+    //   $("body").css({"background": "../img/"})
+    // }
 
   });
 
-  //switch the options when the user clicks on switch
-  $("#switch").click(function() {
-    $("#celsius").attr("readonly", "true")
-    $("#fahrenheit").removeAttr("readonly")
-  })
+  $("#fahrenheitForm").submit(function(event) {
+    //prevent the form from refreshing automatically
+    event.preventDefault();
 
-})
+    //get the value from the input
+    //store it in a variable
+    var fahrenheit = $("#fahrenheit2").val();
+
+    //convert it to Celsius
+    var convertToCelsius = (fahrenheit - 32) * (5/9);
+
+    //display the conversion
+    $("#celsius2").val(convertToCelsius)
+
+  });
+
+  //reset the form when the user clicks reset
+  $("#resetCelsiusForm").click(function() {
+    $("#celsiusForm").each(function() {
+      this.reset();
+    });
+  });
+
+  $("#resetFahrenheitForm").click(function() {
+    $("#fahrenheitForm").each(function() {
+      this.reset();
+    });
+  });
+
+});

@@ -8,26 +8,39 @@
   <body>
 
     <div id="container">
-      <h1>Temperature Converter</h1>
-      <form id="myForm">
-        <label for="celsius">Celsius &#8451;</label>
+      <h2>Temperature Converter</h2>
+      <form id="celsiusForm" autocomplete="off">
+        <div>
+          <label for="celsius">Celsius &#8451;</label>
+          <input id="celsius" type="text" placeholder="0">
+        </div>
+        <div>
+          <label for="fahrenheit">Fahrenheit &#8457;</label>
+          <input id="fahrenheit" type="text" placeholder="32" disabled>
+        </div>
         <br>
         <br>
-        <input id="celsius" type="text" value="" placeholder="0">
-        <br>
-        <label for="fahrenheit">Fahrenheit &#8457;</label>
-        <br>
-        <br>
-        <input id="fahrenheit" type="text" placeholder="32" readonly>
-        <br>
-        <br>
-        <button id="convert" type="submit">Convert</button>
+        <button type="submit">Convert</button>
+        <button id="resetCelsiusForm">Reset</button>
         <br>
         <br>
       </form>
 
-      <button id="switch">Switch</button>
-      <button id="reset">Reset</button>
+      <form id="fahrenheitForm" autocomplete="off">
+        <div>
+          <label for="fahrenheit2">Fahrenheit &#8457;</label>
+          <input id="fahrenheit2" type="text" placeholder="32">
+        </div>
+        <div>
+          <label for="celsius2">Celsius &#8451;</label>
+          <input id="celsius2" type="text" placeholder="0" disabled>
+        </div>
+        <br>
+        <br>
+        <button type="submit">Convert</button>
+        <button id="resetFahrenheitForm">Reset</button>
+      </form>
+      <br>
       <br>
     </div>
 
