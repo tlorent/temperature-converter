@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
 
@@ -12,13 +13,12 @@
       <form id="celsiusForm" autocomplete="off">
         <div>
           <label for="celsius">Celsius &#8451;</label>
-          <input id="celsius" type="text" placeholder="0">
+          <input id="celsius" type="number" placeholder="0" required>
         </div>
         <div>
           <label for="fahrenheit">Fahrenheit &#8457;</label>
-          <input id="fahrenheit" type="text" placeholder="32" disabled>
+          <input id="fahrenheit" type="number" placeholder="32" disabled>
         </div>
-        <br>
         <br>
         <button type="submit">Convert</button>
         <button id="resetCelsiusForm">Reset</button>
@@ -29,13 +29,12 @@
       <form id="fahrenheitForm" autocomplete="off">
         <div>
           <label for="fahrenheit2">Fahrenheit &#8457;</label>
-          <input id="fahrenheit2" type="text" placeholder="32">
+          <input id="fahrenheit2" type="number" placeholder="32" required>
         </div>
         <div>
           <label for="celsius2">Celsius &#8451;</label>
-          <input id="celsius2" type="text" placeholder="0" disabled>
+          <input id="celsius2" type="number" placeholder="0" disabled>
         </div>
-        <br>
         <br>
         <button type="submit">Convert</button>
         <button id="resetFahrenheitForm">Reset</button>

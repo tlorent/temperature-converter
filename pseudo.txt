@@ -11,6 +11,3 @@
 (degrees * 90)/(5+32)
 
 // TO-DO
-Style CSS like todos project
-Show background images in certain temperature ranges
-Optimize images

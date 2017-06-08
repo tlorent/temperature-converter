@@ -5,33 +5,40 @@
 #container {
   text-align: center;
   background-color: #f7f7f7;
-  border-radius: 5px;
-  padding: 5px 20px;
-  border: 1px solid #000;
   width: 350px;
   margin: 150px auto;
   text-align: center;
+  box-shadow: 0px 2px 5px #888888;
 }
 
 html {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  background-color: #2980B9;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
 input {
   text-align: center;
   padding: 10px;
-  border-radius: 2px;
   border: none;
 }
 
 #celsius {
-  margin-left: 19px;
+  margin-left: 21px;
 }
 
 #celsius2 {
-  margin-left: 19px;
+  margin-left: 21px;
 }
 
 div {
@@ -54,4 +61,8 @@ label {
 
 form {
   display: inline-block;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
 }
