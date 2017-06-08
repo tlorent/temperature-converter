@@ -13,8 +13,10 @@
   text-align: center;
 }
 
-body {
-  background-color: #fff;
+html {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 input {

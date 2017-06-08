@@ -14,10 +14,13 @@ $(document).ready(function() {
     //display the conversion
     $("#fahrenheit").val(convertedToFahrenheit);
 
+    var imageURL = '../img/cold1-min.jpg'
+
     //display a background image for the temperature
-    // if(celsius < 0) {
-    //   $("body").css({"background": "../img/"})
-    // }
+    if(celsius < 0) {
+      // $("html").css({"background-image": "url(../img/freeze1-min.jpg);"})
+      $("html").css('background-image', 'url(' + imageURL + ')');
+    }
 
   });
 
